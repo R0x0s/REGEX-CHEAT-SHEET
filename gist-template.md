@@ -25,6 +25,11 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ### Anchors
 The two principal anchors in this regex expression are the `^` at the beginning and the `$` at the end which constitute an exact string match with the components included within the two anchors. When used alone, the `^` anchor matches any string that *begins* with the characters that follow the anchor. The `$` matches any string that *ends* with the characters that precede it. By enclosing the regex between these two anchors, we are asking the search function to match exactly is included between them (what it begins AND ends with). 
 ### Quantifiers
+So what is included between the two anchors. If we examine the expression, we can see that there are a number of components separated by parentheses `()`. Parentheses are used in regex to create separate groups of interest. Within each of these groups, there is a regex that we may look at separately to see what is evaluated. These include:
+- the initial `https` component: `(https?:\/\/)`
+- the domain name (e.g. `www.google`, or `pets`): `([\da-z\.-]+)\.`
+- the top level domain (`.com`, `.gov`, etc): `([a-z\.]{2,6})`
+- the file path: `([\/\w \.-]*)*`
 
 ### OR Operator
 
