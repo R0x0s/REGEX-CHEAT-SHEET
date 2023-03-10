@@ -23,7 +23,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
-
+The two principal anchors in this regex expression are the `^` at the beginning and the `$` at the end which constitute an exact string match with the components included within the two anchors. When used alone, the `^` anchor matches any string that *begins* with the characters that follow the anchor. The `$` matches any string that *ends* with the characters that precede it. By enclosing the regex between these two anchors, we are asking the search function to match exactly is included between them (what it begins AND ends with). 
 ### Quantifiers
 
 ### OR Operator
