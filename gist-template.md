@@ -1,6 +1,6 @@
 # Title (replace with your title)
 
-Introductory paragraph (replace this with your text)
+The following gist gives a thorough description of the central components in matching a given URL utilizing regular expressions in Javascript.
 
 ## Summary
 We will be evaluating the following regular expressions used to match HEX values:
