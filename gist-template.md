@@ -50,7 +50,18 @@ Finally, the `{}` quantifier defines a range of possible instances where a match
 ### Character Classes
 The main character classes to consider in the above expression include the \d character class which looks for any digit, and the \w character class that looks for any alphanumeric character.
 ### Flags
-
+i
+With this flag the search is case-insensitive: no difference between A and a.
+g
+With this flag the search looks for all matches, without it – only the first match is returned.
+m
+Multiline mode (covered in the chapter Multiline mode of anchors ^ $, flag "m").
+s
+Enables “dotall” mode, that allows a dot . to match newline character \n.
+u
+Enables full Unicode support. The flag enables correct processing of surrogate pairs. More about that in the chapter Unicode: flag "u" and class \p{...}.
+y
+“Sticky” mode: searching at the exact position in the text (covered in the chapter Sticky flag "y", searching at position)
 ### Grouping and Capturing
 
 ### Bracket Expressions
