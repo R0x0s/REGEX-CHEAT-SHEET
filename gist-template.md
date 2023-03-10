@@ -79,7 +79,7 @@ As explained in the quantifier section, normal quantifiers are greedy, causing t
 ### Boundaries
 Boundary markers such as ^ and $ allow you to anchor the regex pattern to the beginning and end of the line (or string depending on which flags you use).
 ### Back-references
-
+Backreferences match the same text as previously matched by a capturing group
 ### Look-ahead and Look-behind
 
 ## Author
