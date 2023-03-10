@@ -48,7 +48,7 @@ The expression is allowing for any number of filepath characters that may follow
 
 Finally, the `{}` quantifier defines a range of possible instances where a match may be identified. In evaluating the Top level domain, the regular expression allows for the top level domain to consist of 2 to 6 characters.
 ### Character Classes
-
+The main character classes to consider in the above expression include the \d character class which looks for any digit, and the \w character class that looks for any alphanumeric character.
 ### Flags
 
 ### Grouping and Capturing
