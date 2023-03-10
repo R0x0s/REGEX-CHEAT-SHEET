@@ -77,7 +77,7 @@ Example: w.+l matches well in well but the lazy w.+?l matches wel
 
 As explained in the quantifier section, normal quantifiers are greedy, causing the regex to match as many occurrences of a particular pattern as possible. However, if ? was appended, the quantifier would become lazy-- causing the regex to match as few occurrences as possible. In our case, the quantifier is greedy.
 ### Boundaries
-
+Boundary markers such as ^ and $ allow you to anchor the regex pattern to the beginning and end of the line (or string depending on which flags you use).
 ### Back-references
 
 ### Look-ahead and Look-behind
