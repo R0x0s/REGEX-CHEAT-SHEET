@@ -3,8 +3,10 @@
 Introductory paragraph (replace this with your text)
 
 ## Summary
+We will be evaluating the following regular expressions used to match HEX values:
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+
 
 ## Table of Contents
 
