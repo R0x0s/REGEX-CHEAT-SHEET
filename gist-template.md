@@ -63,7 +63,7 @@ Enables full Unicode support. The flag enables correct processing of surrogate p
 y
 “Sticky” mode: searching at the exact position in the text (covered in the chapter Sticky flag "y", searching at position)
 ### Grouping and Capturing
-
+Parentheses group the regex between them. They capture the text matched by the regex inside them into a numbered group that can be reused with a numbered backreference. They allow you to apply regex operators to the entire grouped regex.
 ### Bracket Expressions
 The main OR operator used in the above regex is the `[]`. The expression will match for any characters or character classes included in the brackets. For example the `[\da-z\.-]` expression matches for any digits (`\d`) OR any characters between a and z (`a-z`) OR any '.' (`\.`) OR any '-' (`-`). 
 ### Greedy and Lazy Match
