@@ -32,7 +32,19 @@ So what is included between the two anchors. If we examine the expression, we ca
 - the file path: `([\/\w \.-]*)*`
 
 ### OR Operator
+some of the components of *capture groups* end with a `?` or a `*`. These are generally known as **quantifiers**. Quantifiers are used to define the number of times a given expression may be identified. The `?` makes a single instance of the character preceding the quantifier optional, whereas the `*` makes multiple instances of the characters preceding the quantifier optional. 
+For example, the grouping 
+```
+(https?:\/\/)?
+```
+contains two `?` quantifiers. This expression is looking for an `http://`
+So if we look at the fourth grouping:
+```
+([\/\w \.-]*)*
+```
+The expression is allowing for any number of filepath characters that may follow an initial specified domain.
 
+Finally, the `{}` quantifier defines a range of possible instances where a match may be identified. In evaluating the Top level domain, the regular expression allows for the top level domain to consist of 2 to 6 characters.
 ### Character Classes
 
 ### Flags
@@ -40,9 +52,17 @@ So what is included between the two anchors. If we examine the expression, we ca
 ### Grouping and Capturing
 
 ### Bracket Expressions
-
+The main OR operator used in the above regex is the `[]`. The expression will match for any characters or character classes included in the brackets. For example the `[\da-z\.-]` expression matches for any digits (`\d`) OR any characters between a and z (`a-z`) OR any '.' (`\.`) OR any '-' (`-`). 
 ### Greedy and Lazy Match
+Code Snipet: [a-f0-9]{6} Code Snipet: [a-f0-9]{3}
 
+Quantifier: {}
+
+Description: Greedy means match the longest possible string. Lazy means match the shortest possible string.
+
+Example: w.+l matches well in well but the lazy w.+?l matches wel
+
+As explained in the quantifier section, normal quantifiers are greedy, causing the regex to match as many occurrences of a particular pattern as possible. However, if ? was appended, the quantifier would become lazy-- causing the regex to match as few occurrences as possible. In our case, the quantifier is greedy.
 ### Boundaries
 
 ### Back-references
