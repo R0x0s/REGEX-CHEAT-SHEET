@@ -1,4 +1,4 @@
-# Title (replace with your title)
+# Title (REGEX URL CHEAT SHEET)
 
 The following gist gives a thorough description of the central components in matching a given URL utilizing regular expressions in Javascript.
 
