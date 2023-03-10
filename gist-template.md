@@ -81,7 +81,8 @@ Boundary markers such as ^ and $ allow you to anchor the regex pattern to the be
 ### Back-references
 Backreferences match the same text as previously matched by a capturing group
 ### Look-ahead and Look-behind
+Negative lookahead provides the solution: q(?!u). The negative lookahead construct is the pair of parentheses, with the opening parenthesis followed by a question mark and an exclamation point.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Troy Miller github@ https://github.com/R0x0s  email: troysteedmiller@gmail.com
